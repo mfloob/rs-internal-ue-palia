@@ -10,4 +10,4 @@ Install [rust](https://doc.rust-lang.org/cargo/getting-started/installation.html
 
 `cargo +nightly build [--release]`
 
-The dll is in the `rs-internal-ue-palia/target` folder after compiling
+The dll is in `/target` after compiling
