@@ -109,7 +109,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rpal"
+name = "rs-internal-ue-palia"
 version = "0.1.0"
 dependencies = [
  "once_cell",
