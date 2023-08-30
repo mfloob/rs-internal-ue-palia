@@ -1,6 +1,6 @@
 ## Info
 
-Update gnames, gobjects, and gworld addresses in `utils.rs`.
+Update gnames, gobjects, and gworld addresses in `utils.rs`
 
 ## Building
 
