@@ -129,7 +129,7 @@ pub fn free_console() {
 
 pub fn unload() { 
     unsafe {
-        let module_name = CString::new("rpal.dll").unwrap();
+        let module_name = CString::new("rs_internal_ue_palia.dll").unwrap();
         let module = GetModuleHandleA(PCSTR::from_raw(module_name.as_ptr() as *const u8)).unwrap();
         FreeLibraryAndExitThread(module, 0);
     }
