@@ -22,7 +22,7 @@ use crate::ue;
 // .text:00007FF7D87ED5EB                 jmp     short loc_7FF7D87ED5F0
 pub unsafe fn get_g_objects() -> *const ue::TUObjectArray {
     let base = get_base_address();
-    std::mem::transmute(base + 0x816c8e0)
+    std::mem::transmute(base + 0x81b5060)
 }
 
 // old: 0x78EA280
@@ -35,7 +35,7 @@ pub unsafe fn get_g_objects() -> *const ue::TUObjectArray {
 // .text:00007FF7D6BEEE32                 jmp     loc_7FF7D6BEED90
 pub unsafe fn get_g_names() -> *const ue::FNamePool {
     let base = get_base_address();
-    std::mem::transmute(base + 0x80ccdc0)
+    std::mem::transmute(base + 0x8115540)
 }
 
 // old: 0x7AF7D50
@@ -55,7 +55,7 @@ pub unsafe fn get_g_names() -> *const ue::FNamePool {
 // .text:00007FF7D7A6BFB6                 mov     rax, cs:MY_GWORLD <-----------------
 pub unsafe fn get_g_world() -> *const *const ue::UWorld {
     let base = get_base_address();
-    std::mem::transmute(base + 0x82c75d0)
+    std::mem::transmute(base + 0x830fd50)
 }
 
 pub unsafe fn get_font() -> *const ue::UFont {
